@@ -21,7 +21,7 @@ const addNoteHandler = (request, h) => {
       status: 'success',
       message: 'Catatan berhasil ditambahkan',
       data: {
-        noteID: id,
+        noteId: id,
       },
     });
     response.code(201);
@@ -83,7 +83,7 @@ const editNoteByIdHandler = (request, h) => {
 
     const response = h.response({
       status: 'success',
-      message: 'Catatan berhasil diperbaharui',
+      message: 'Catatan berhasil diperbarui',
     });
     response.code(200);
     return response;
